@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  duration: 2018-08-28 12:18:24
+  date: 2018-08-28
+  updates: 
+  owner_id: 1
+  important_info: MyString
+
+two:
+  type: 
+  duration: 2018-08-28 12:18:24
+  date: 2018-08-28
+  updates: 
+  owner_id: 1
+  important_info: MyString
