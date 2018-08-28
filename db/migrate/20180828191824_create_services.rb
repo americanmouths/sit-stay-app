@@ -1,7 +1,7 @@
 class CreateServices < ActiveRecord::Migration[5.1]
   def change
     create_table :services do |t|
-      t.string :type
+      t.string :service_type
       t.time :duration
       t.date :date
       t.string :updates
