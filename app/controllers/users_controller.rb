@@ -10,5 +10,5 @@ class UsersController < ApplicationController
       render json: { errors: { user: "Please enter a valid username & password." }}
     end
   end
-  
+
 end
