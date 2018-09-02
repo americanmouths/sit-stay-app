@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   scope '/api' do
+    post '/login' => 'sessions#create'
+    post '/signup' => 'users#create'
     resources :services
     resources :addresses
     resources :owners
