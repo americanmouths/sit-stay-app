@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { NavBar, Nav, NavItem, Modal } from 'react-bootstrap/lib';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { LinkContainer } from 'react-router-bootstrap';
+import { logoutUser } from './../actions/auth';
 
 class NavBar extends Component {
+
   render(){
     const loggedIn = !!localStorage.getItem("token")
     const userName = localStorage.getItem("username")
@@ -9,15 +13,33 @@ class NavBar extends Component {
     const userNav = (
       <Navbar.Collapse>
         <Nav pullRight>
-          <LinkContainer to="/main"><NavItem eventKey={1} exact={true}>All</NavItem></LinkContainer>
-          <LinkContainer to="/following"><NavItem eventKey={2}>Following</NavItem></LinkContainer>
-          <LinkContainer to="/followees"><NavItem eventKey={3}>Followees</NavItem></LinkContainer>
-          <LinkContainer to="/daily_great/liked"><NavItem eventKey={3}>Liked</NavItem></LinkContainer>
-          <LinkContainer to="/daily_great/new"><NavItem eventKey={4}>New</NavItem></LinkContainer>
-          <NavItem eventKey={6} href="/" onClick={() => this.logout()}>Log Out</NavItem>
+          <LinkContainer to="/"><NavItem eventKey={1}>All</NavItem></LinkContainer>
         </Nav>
     </Navbar.Collapse>
     )
+    const guestNav = (
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <LinkContainer to="/signup"><NavItem eventKey={1}>Sign Up</NavItem></LinkContainer>
+              <LinkContainer to="/login" exact={true}><NavItem eventKey={2}>Login</NavItem></LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
+        )
 
-  }
-}
+      return (
+          <div>
+            <Navbar collapseOnSelect>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  {userName ? "Hi Username": <p>Sit/Stay</p>}
+                </Navbar.Brand>
+                <Navbar.Toggle />
+              </Navbar.Header>
+              {loggedIn ? userNav : guestNav}
+            </Navbar>
+          </div>
+        )
+      }
+    }
+
+export default NavBar;
