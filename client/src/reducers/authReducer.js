@@ -1,4 +1,4 @@
-export function authReducer(state = {
+export default function authReducer(state = {
   currentUser: {},
   token: null,
   loading: false,
