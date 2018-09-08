@@ -15,11 +15,11 @@ export function login(loginInfo){
         "Content-Type": "application/json"
       }
     }).then(response => response.json())
-    .then(user => {
-      dispatch({
-        type: "LOG_IN",
-        payload: user
+      .then(user => {
+        dispatch({
+          type: "LOG_IN",
+          payload: user
+        });
       });
-    });
+    }
   }
-}
