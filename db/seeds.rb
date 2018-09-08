@@ -10,3 +10,4 @@ kayla = Owner.create(first_name: "Kayla", last_name: "Hansen", phone: "760419560
 bella = Pet.create(name: "bella", age: 2, breed: "boxer", gender: "female", color: "brindle", owner_id: kayla.id)
 address = Address.create(owner_id: kayla.id, street: "4091 mira costa st", city: "oceanside", state: "ca", zipcode: 92056)
 walk = Service.create(service_type: "dog walk", duration: 20, date: Date.new, owner_id: kayla.id)
+User.create(username: "kayla", password: "password")
