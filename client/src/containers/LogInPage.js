@@ -25,11 +25,12 @@ class LogInPage extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!!nextProps.token) {
+
+    if(nextProps.token) {
       this.props.history.push('/home')
     };
 
-    if (nextProps.errors) {
+    if(nextProps.errors) {
       this.setState({
         username: '',
         password: ''
@@ -50,7 +51,6 @@ class LogInPage extends Component {
 
         <div className="col-md-4">
         </div>
-
         <div className="col-md-4">
             <h2>Log In</h2>
                 <form>
