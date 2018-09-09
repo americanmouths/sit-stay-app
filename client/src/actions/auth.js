@@ -1,3 +1,5 @@
+import fetch from 'isomorphic-fetch';
+
 export function logoutUser() {
   return {type: 'LOG_OUT'};
 }
