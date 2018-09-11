@@ -5,12 +5,10 @@ mintgreen: #95cfb7;
 whitish blue: #edf7f3;
 blue: #95cacf;
 pinkish: #cf95ad;
-
 */
 
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Lato');
-
   body {
     padding: 0;
     margin: 0;
@@ -43,8 +41,24 @@ injectGlobal`
   .navbar-default .navbar-toggle {
     border-color: #95cfb7;
   }
-
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #cf95ad;
-}
+  }
+  .carousel-control{
+    background-image: none;
+    text-shadow: none;
+  }
+  .carousel-control.left,
+  .carousel-control.right{
+    background-image: none;
+  }
+  .jumbotron{
+    width: 75%;
+    margin: auto;
+    background: #cf95ad;
+    color: #edf7f3;
+  }
+  span.glyphicon{
+    color: #cf95ad;
+  }
 `

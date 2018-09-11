@@ -6,6 +6,7 @@ import PetsContainer from './components/PetsContainer';
 import NavBar from './containers/NavBar';
 import LogInPage from './containers/LogInPage';
 import FakeHome from './containers/FakeHome';
+import WelcomeContainer from './containers/WelcomeContainer';
 
 class App extends Component {
   render() {
@@ -13,9 +14,8 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <h1>Sit/Stay</h1>
-          <PetsContainer />
           <Switch>
+            <Route exact path="/" component={WelcomeContainer} />
             <Route exact path="/login" component={LogInPage} />
             <Route exact path="/home" component={FakeHome} />
           </Switch>
