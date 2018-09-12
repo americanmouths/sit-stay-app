@@ -9,6 +9,8 @@ export default function authReducer(state = {
       return {...state, loading: true}
     case 'LOG_IN':
       return setUser(state, action.payload)
+    case 'SIGN_UP':
+      return setUser(state, action.payload)
     default:
       return state;
   }

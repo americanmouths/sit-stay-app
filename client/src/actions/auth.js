@@ -26,22 +26,22 @@ export function login(loginInfo){
     }
   }
 
-  export function signIn(signInInfo){
-    const request = JSON.stringify(signInInfo);
+  export function signUp(signUpInfo){
+    const request = JSON.stringify(signUpInfo);
 
     return (dispatch) => {
       dispatch({type: "LOADING_AUTH_REQ"});
-      return fetch('/api/signin', {
+      return fetch('/api/signup', {
         method: 'post',
         body: request,
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json"
         }
-      }).then(repsonse => response.json())
+      }).then(response => response.json())
       .then(user => {
         dispatch({
-          type: "SIGN_IN",
+          type: "SIGN_UP",
           payload: user
         });
       });
