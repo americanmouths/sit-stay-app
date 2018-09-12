@@ -9,8 +9,8 @@ export function login(loginInfo){
 
   return (dispatch) => {
     dispatch({type: "LOADING_AUTH_REQ"});
-    return fetch("/api/login", {
-      method: "post",
+    return fetch('/api/login', {
+      method: 'post',
       body: request,
       headers: {
         "Accept": "application/json",
@@ -20,6 +20,28 @@ export function login(loginInfo){
       .then(user => {
         dispatch({
           type: "LOG_IN",
+          payload: user
+        });
+      });
+    }
+  }
+
+  export function signIn(signInInfo){
+    const request = JSON.stringify(signInInfo);
+
+    return (dispatch) => {
+      dispatch({type: "LOADING_AUTH_REQ"});
+      return fetch('/api/signin', {
+        method: 'post',
+        body: request,
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        }
+      }).then(repsonse => response.json())
+      .then(user => {
+        dispatch({
+          type: "SIGN_IN",
           payload: user
         });
       });
