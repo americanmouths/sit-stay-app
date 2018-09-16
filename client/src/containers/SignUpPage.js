@@ -27,7 +27,7 @@ class SignUpPage extends Component {
   componentWillReceiveProps(nextProps) {
 
     if(nextProps.token) {
-      this.props.history.push('/home')
+      this.props.history.push('/')
     };
 
     if(nextProps.errors) {
