@@ -11,6 +11,9 @@ export default function authReducer(state = {
       return setUser(state, action.payload)
     case 'SIGN_UP':
       return setUser(state, action.payload)
+    case 'LOG_OUT':
+      localStorage.clear();
+      return state;
     default:
       return state;
   }
