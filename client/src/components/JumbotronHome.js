@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button, Carousel, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Jumbotron, Button, Carousel } from 'react-bootstrap';
 
 const JumbotronHome = () => {
 

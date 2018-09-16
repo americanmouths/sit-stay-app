@@ -5,10 +5,11 @@ mintgreen: #95cfb7;
 whitish blue: #edf7f3;
 blue: #95cacf;
 pinkish: #cf95ad;
+link-hover: #6c9599;
 */
 
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Lato');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Lato|Gamja+Flower');
   body {
     padding: 0;
     margin: 0;
@@ -22,21 +23,18 @@ injectGlobal`
   }
   .navbar-default .navbar-brand {
     color: white;
-    font-family: 'Baloo Tammudu', cursive;
+    font-family: 'Gamja Flower', cursive;
     font-size: 2.5em;
   }
   .navbar-default .navbar-brand:hover {
     color: white;
   }
-  .navbar-brand {
-    line-height: 50px;
-  }
   .navbar-default .navbar-nav>li>a {
     color: #edf7f3;
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .navbar-default .navbar-nav>li>a:hover {
-      color: #cf95ad;
+      color: #6c9599;
   }
   .navbar-default .navbar-toggle {
     border-color: #95cfb7;
@@ -55,10 +53,15 @@ injectGlobal`
   .jumbotron{
     width: 75%;
     margin: auto;
-    background: #cf95ad;
+    background: #95cacf;
     color: #edf7f3;
+    border-radius: 10px 70px; 
   }
   span.glyphicon{
     color: #cf95ad;
   }
 `
+/*  .navbar-brand {
+    line-height: 50px;
+  }
+  */
