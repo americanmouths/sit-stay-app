@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 import { logOutUser } from './../actions/auth';
@@ -26,6 +26,13 @@ class NavBar extends Component {
     const guestNav = (
       <Navbar.Collapse>
         <Nav pullRight>
+          <NavDropdown eventKey={3} title="Services" id="basic-nav-dropdown">
+            <LinkContainer to="/dogwalking"><MenuItem eventKey={3.1}>Dog Walking</MenuItem></LinkContainer>
+            <LinkContainer to="/petsitting"><MenuItem eventKey={3.2}>Pet Sitting</MenuItem></LinkContainer>
+            <LinkContainer to="/feeding"><MenuItem eventKey={3.2}>Feedings</MenuItem></LinkContainer>
+            <LinkContainer to="/dogpark"><MenuItem eventKey={3.2}>Park Outtings</MenuItem></LinkContainer>
+          </NavDropdown>
+          <LinkContainer to="/about"><NavItem eventKey={1}>About</NavItem></LinkContainer>
           <LinkContainer to="/signup"><NavItem eventKey={1}>Sign Up</NavItem></LinkContainer>
           <LinkContainer to="/login" exact={true}><NavItem eventKey={2}>Login</NavItem></LinkContainer>
         </Nav>
