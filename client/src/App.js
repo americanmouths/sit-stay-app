@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PetsContainer from './components/PetsContainer';
 import NavBar from './containers/NavBar';
 import LogInPage from './containers/LogInPage';
-import FakeHome from './containers/FakeHome';
-import WelcomeContainer from './containers/WelcomeContainer';
+import SignUpPage from './containers/SignUpPage';
+import Home from './components/Home';
 
 class App extends Component {
   render() {
@@ -15,9 +15,9 @@ class App extends Component {
         <div>
           <NavBar />
           <Switch>
-            <Route exact path="/" component={WelcomeContainer} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/signup" component={SignUpPage} />
             <Route exact path="/login" component={LogInPage} />
-            <Route exact path="/home" component={FakeHome} />
           </Switch>
         </div>
       </Router>
