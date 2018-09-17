@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { login } from './../actions/auth';
+import { Login } from './../styles/containers';
+import { Button } from 'react-bootstrap';
 
 class LogInPage extends Component {
   constructor() {
@@ -52,28 +54,30 @@ class LogInPage extends Component {
         <div className="col-md-4">
         </div>
         <div className="col-md-4">
-            <h2>Log In</h2>
-                <form>
-                  <input
-                    type="username"
-                    name="username"
-                    value={username}
-                    onChange={this.handleChange}
-                    placeholder="username"
-                  />
-                  <br />
-                  <br />
-                  <input
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={this.handleChange}
-                    placeholder="password"
-                  />
-                  <br />
-                  <br />
-                  <button onClick={this.handleSubmit} className="Button-Control">Submit</button>
-                </form>
+          <Login>
+            <h1 className="log-in">Log In</h1>
+              <form>
+                <input
+                  type="username"
+                  name="username"
+                  value={username}
+                  onChange={this.handleChange}
+                  placeholder="username"
+                />
+                <br />
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={this.handleChange}
+                  placeholder="password"
+                />
+                <br />
+                <br />
+                <Button onClick={this.handleSubmit} className="Button-Control" bsStyle="primary">Submit</Button>
+              </form>
+            </Login>
           </div>
           <div className="col-md-4">
           </div>

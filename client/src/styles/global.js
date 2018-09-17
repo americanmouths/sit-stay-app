@@ -84,6 +84,15 @@ injectGlobal`
   .user-button{
     margin: 10px;
   }
+  .sign-up,
+  .log-in{
+    font-family: 'Gamja Flower', cursive;
+  }
+  input{
+    background: #edf7f3;
+    color: #686e77;
+    border: 1px solid #686e77;
+  }
 `
 /*  .navbar-brand {
     line-height: 50px;

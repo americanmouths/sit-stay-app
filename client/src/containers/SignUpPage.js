@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { signUp } from './../actions/auth';
+import { SignUp } from './../styles/containers';
+import { Button } from 'react-bootstrap';
 
 class SignUpPage extends Component {
   constructor() {
@@ -48,35 +50,36 @@ class SignUpPage extends Component {
     const errors = this.props.errors
     return (
       <div className="row">
-
         <div className="col-md-4">
         </div>
         <div className="col-md-4">
-            <h2>Sign Up</h2>
-                <form>
-                  <input
-                    type="username"
-                    name="username"
-                    value={username}
-                    onChange={this.handleChange}
-                    placeholder="username"
-                  />
-                  <br />
-                  <br />
-                  <input
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={this.handleChange}
-                    placeholder="password"
-                  />
-                  <br />
-                  <br />
-                  <button onClick={this.handleSubmit} className="Button-Control">Submit</button>
-                </form>
-          </div>
-          <div className="col-md-4">
-          </div>
+        <SignUp>
+        <h1 className="sign-up">Sign Up</h1>
+          <form>
+            <input
+              type="username"
+              name="username"
+              value={username}
+              onChange={this.handleChange}
+              placeholder="username"
+            />
+            <br />
+            <br />
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={this.handleChange}
+              placeholder="password"
+            />
+            <br />
+            <br />
+            <Button onClick={this.handleSubmit} bsStyle="primary" className="Button-Control">Submit</Button>
+          </form>
+        </SignUp>
+        </div>
+        <div className="col-md-4">
+        </div>
       </div>
      )
    }
