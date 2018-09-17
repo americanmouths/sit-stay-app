@@ -80,6 +80,10 @@ injectGlobal`
   span.glyphicon{
     color: #686e77;
   }
+  .service-button,
+  .user-button{
+    margin: 10px;
+  }
 `
 /*  .navbar-brand {
     line-height: 50px;
