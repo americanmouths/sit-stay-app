@@ -30,7 +30,7 @@ class NavBar extends Component {
             <LinkContainer to="/dogwalking"><MenuItem eventKey={3.1}>Dog Walking</MenuItem></LinkContainer>
             <LinkContainer to="/petsitting"><MenuItem eventKey={3.2}>Pet Sitting</MenuItem></LinkContainer>
             <LinkContainer to="/feeding"><MenuItem eventKey={3.2}>Feedings</MenuItem></LinkContainer>
-            <LinkContainer to="/dogpark"><MenuItem eventKey={3.2}>Park Outtings</MenuItem></LinkContainer>
+            <LinkContainer to="/dogpark"><MenuItem eventKey={3.2}>Park Outings</MenuItem></LinkContainer>
           </NavDropdown>
           <LinkContainer to="/about"><NavItem eventKey={1}>About</NavItem></LinkContainer>
           <LinkContainer to="/signup"><NavItem eventKey={1}>Sign Up</NavItem></LinkContainer>
