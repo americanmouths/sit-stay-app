@@ -17,7 +17,7 @@ class NavBar extends Component {
     const userNav = (
       <Navbar.Collapse>
         <Nav pullRight>
-          <LinkContainer to="/"><NavItem eventKey={1}>All</NavItem></LinkContainer>
+          <LinkContainer to="/"><NavItem eventKey={1}>Home</NavItem></LinkContainer>
           <NavItem href="/" onClick={() => this.logOut()}>Log Out</NavItem>
         </Nav>
       </Navbar.Collapse>
@@ -44,7 +44,7 @@ class NavBar extends Component {
             <Navbar collapseOnSelect>
               <Navbar.Header>
                 <Navbar.Brand>
-                  {userName ? "Hi Username": <p>Sit/Stay</p>}
+                  {userName ? "Logged in as: " + userName: <p>Sit/Stay</p>}
                 </Navbar.Brand>
                 <Navbar.Toggle />
               </Navbar.Header>
