@@ -4,7 +4,7 @@ import LoggedInHome from './LoggedInHome';
 
 const Home = () => {
 
-  const loggedIn = !!localStorage.getItem("token")
+  const loggedIn = !!localStorage.getItem("token");
 
   return (
     <div>
