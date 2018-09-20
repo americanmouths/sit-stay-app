@@ -54,29 +54,29 @@ class SignUpPage extends Component {
         </div>
         <div className="col-md-4">
         <SignUp>
-        <h1 className="sign-up">Sign Up</h1>
-          <form>
-            <input
-              type="username"
-              name="username"
-              value={username}
-              onChange={this.handleChange}
-              placeholder="username"
-            />
-            <br />
-            <br />
-            <input
-              type="password"
-              name="password"
-              value={password}
-              onChange={this.handleChange}
-              placeholder="password"
-            />
-            <br />
-            <br />
-            <Button onClick={this.handleSubmit} bsStyle="primary" className="Button-Control">Submit</Button>
-          </form>
-        </SignUp>
+          <h1 className="sign-up">Sign Up</h1>
+            <form>
+              <input
+                type="username"
+                name="username"
+                value={username}
+                onChange={this.handleChange}
+                placeholder="username"
+              />
+              <br />
+              <br />
+              <input
+                type="password"
+                name="password"
+                value={password}
+                onChange={this.handleChange}
+                placeholder="password"
+              />
+              <br />
+              <br />
+              <Button onClick={this.handleSubmit} bsStyle="primary" className="Button-Control">Submit</Button>
+            </form>
+          </SignUp>
         </div>
         <div className="col-md-4">
         </div>

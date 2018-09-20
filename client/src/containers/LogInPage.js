@@ -81,7 +81,7 @@ class LogInPage extends Component {
           </div>
           <div className="col-md-4">
           </div>
-      </div>
+        </div>
      )
    }
  }
