@@ -90,7 +90,8 @@ injectGlobal`
     border: 1px solid #686e77;
   }
   .about-jumbotron,
-  .dogwalking-jumbotron{
+  .dogwalking-jumbotron,
+  .petsitting-jumbotron{
     background: #95cacf;
     text-align: center;
   }
@@ -105,7 +106,8 @@ injectGlobal`
     margin-right: 14%;
 
   }
-  .dog-walking-li{
+  .dog-walking-li,
+  .pet-sitting-li{
     font-size: 1.3em;
     color: #686e77;
     text-align: left;
