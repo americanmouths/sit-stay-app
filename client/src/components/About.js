@@ -1,10 +1,10 @@
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
-import selfieimg from './../images/about/selfie.jpg';
-import goatimg from './../images/about/goat.jpg';
-import horseimg from './../images/about/horse.png';
-import catimg from './../images/about/cat.png';
-import { IntroPhoto, IntroPhotoResize, IntroParagraphDiv, IntroParagraph } from './../styles/containers';
+import selfieimg from './../images/about/selfie.PNG';
+import goatimg from './../images/about/goat.PNG';
+import horseimg from './../images/about/horse.PNG';
+import catimg from './../images/about/cat.PNG';
+import { IntroParagraphDiv, IntroParagraph } from './../styles/containers';
 
 const About = () => {
 
@@ -12,18 +12,10 @@ const About = () => {
     <div>
       <Jumbotron className="about-jumbotron">
         <center>
-        <IntroPhotoResize>
-          <img src={goatimg} alt={"goat_image"} className="intro-photo"/>
-        </IntroPhotoResize>
-        <IntroPhoto>
-          <img src={horseimg} alt={"horse_image"} className="photo"/>
-        </IntroPhoto>
-        <IntroPhotoResize>
-          <img src={selfieimg} alt={"selfie_image"} className="intro-photo"/>
-        </IntroPhotoResize>
-        <IntroPhoto>
-          <img src={catimg} alt={"cat_image"} className="photo"/>
-        </IntroPhoto>
+          <img src={goatimg} alt={"goat_image"} className="resize-photo"/>
+          <img src={horseimg} alt={"horse_image"} className="resize-photo"/>
+          <img src={selfieimg} alt={"selfie_image"} className="resize-photo"/>
+          <img src={catimg} alt={"cat_image"} className="resize-photo"/>
           <h1>Hi I&#39;m Kayla</h1>
           <IntroParagraphDiv>
             <IntroParagraph>
