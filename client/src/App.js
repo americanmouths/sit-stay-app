@@ -10,6 +10,7 @@ import About from './components/About';
 import DogWalking from './components/DogWalking';
 import PetSitting from './components/PetSitting';
 import Feeding from './components/Feeding';
+import DogPark from './components/DogPark';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/dogwalking" component={DogWalking} />
             <Route exact path="/petsitting" component={PetSitting} />
             <Route exact path="/feeding" component={Feeding} />
+            <Route exact path="/dogpark" component={DogPark} />
           </Switch>
         </div>
       </Router>

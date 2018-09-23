@@ -92,6 +92,7 @@ injectGlobal`
   .about-jumbotron,
   .dogwalking-jumbotron,
   .petsitting-jumbotron,
+  .dogpark-jumbotron,
   .feeding-jumbotron{
     background: #95cacf;
     text-align: center;
@@ -109,7 +110,8 @@ injectGlobal`
   }
   .dog-walking-li,
   .pet-sitting-li,
-  .feeding-li{
+  .feeding-li,
+  .dog-park-li{
     font-size: 1.3em;
     color: #686e77;
     text-align: left;
