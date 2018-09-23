@@ -8,6 +8,7 @@ import LogInPage from './containers/LogInPage';
 import SignUpPage from './containers/SignUpPage';
 import Home from './components/Home';
 import About from './components/About';
+import DogWalking from './components/DogWalking';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/signup" component={SignUpPage} />
             <Route exact path="/login" component={LogInPage} />
+            <Route exact path="/dogwalking" component={DogWalking} />
           </Switch>
         </div>
       </Router>
