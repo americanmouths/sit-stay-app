@@ -84,14 +84,32 @@ injectGlobal`
   .user-button{
     margin: 10px;
   }
-  .sign-up,
-  .log-in{
-    font-family: 'Gamja Flower', cursive;
-  }
   input{
     background: #edf7f3;
     color: #686e77;
     border: 1px solid #686e77;
+  }
+  .intro-photo{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  .photo {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  .intro-paragraph{
+    text-align: justify;
+  }
+  .intro {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .about-jumbotron{
+    background: #95cacf;
   }
 `
 /*  .navbar-brand {
