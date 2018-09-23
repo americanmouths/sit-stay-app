@@ -55,7 +55,7 @@ class LogInPage extends Component {
         </div>
         <div className="col-md-4">
           <Login>
-            <h1 className="log-in">Log In</h1>
+            <h1>Log In</h1>
               <form>
                 <input
                   type="username"

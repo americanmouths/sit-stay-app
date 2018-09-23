@@ -54,7 +54,7 @@ class SignUpPage extends Component {
         </div>
         <div className="col-md-4">
         <SignUp>
-          <h1 className="sign-up">Sign Up</h1>
+          <h1>Sign Up</h1>
             <form>
               <input
                 type="username"
