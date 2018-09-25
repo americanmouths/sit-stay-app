@@ -116,4 +116,15 @@ injectGlobal`
     color: #686e77;
     text-align: left;
   }
+  .test{
+    color: red;
+  }
+
+  .react-calendar__month-view__days__day--weekend{
+    color: #95cacf !important;
+  }
+  .react-calendar{
+    width: 550px !important;
+    max-width: 100% !important;
+  }
 `
